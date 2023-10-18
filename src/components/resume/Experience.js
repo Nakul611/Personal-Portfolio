@@ -1,68 +1,94 @@
-import React from "react";
-import {motion} from "framer-motion"
-import ResumeCard from "./ResumeCard";
+import React, { useState, useEffect} from "react";
+import { SiCplusplus, SiTailwindcss, SiKotlin, SiSolidity, SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects } from "react-icons/si";
+import { FaReact, FaPython, FaRust } from "react-icons/fa";
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3, DiJavascript } from "react-icons/di";
+import { TbBrandThreejs } from "react-icons/tb";
+import { html, css, js, Reeact, tailwindcss, three, cpp, python, rust, kotlin, solidity } from "../../assets";
 
 const Experience = () => {
+  const [hoveredImage, setHoveredImage] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const handleMouseOver = (image) => {
+    if (windowWidth > 600) {
+      setHoveredImage(image);
+    }
+  };
+
+  const handleMouseOut = () => {
+    setHoveredImage(null);
+  };
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="py-12 font-titleFont flex gap-20"
-    >
-      <div>
-        <div className="flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
-          <h2 className="text-4xl font-bold">Job Experience</h2>
-        </div>
-        <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-white flex flex-col gap-10">
-          <ResumeCard
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
-          />
-          <ResumeCard
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-          />
-          <ResumeCard
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
-        </div>
+    <div className="flex flex-col items-center mt-20 mx-8 md:mx-16 gap-4 md:gap-8">
+      <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(html)} onMouseOut={handleMouseOut}>
+          <AiFillHtml5 />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(css)} onMouseOut={handleMouseOut}>
+          <DiCss3 />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(js)} onMouseOut={handleMouseOut}>
+          <DiJavascript />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(Reeact)} onMouseOut={handleMouseOut}>
+          <FaReact />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(tailwindcss)} onMouseOut={handleMouseOut}>
+          <SiTailwindcss />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(three)} onMouseOut={handleMouseOut}>
+          <TbBrandThreejs />
+        </span>
       </div>
-      <div>
-        <div className="flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2001 - 2020</p>
-          <h2 className="text-4xl font-bold">Trainer Experience</h2>
-        </div>
-        <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-white flex flex-col gap-10">
-          <ResumeCard
-            title="Gym Instructor"
-            subTitle="Rainbow Gym Center (2015 - 2020)"
-            result="DHAKA"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
-          />
-          <ResumeCard
-            title="Web Developer and Instructor"
-            subTitle="SuperKing College (2010 - 2014)"
-            result="CANADA"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-          />
-          <ResumeCard
-            title="School Teacher"
-            subTitle="Kingstar Secondary School (2001 - 2010)"
-            result="NEVADA"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
-          />
-        </div>
+      <div className="flex flex-wrap justify-center mt-12 gap-8 md:gap-12">
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(cpp)} onMouseOut={handleMouseOut}>
+          <SiCplusplus />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(python)} onMouseOut={handleMouseOut}>
+          <FaPython />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(rust)} onMouseOut={handleMouseOut}>
+          <FaRust />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(kotlin)} onMouseOut={handleMouseOut}>
+          <SiKotlin />
+        </span>
+        <span className="bannerIcon" onMouseOver={() => handleMouseOver(solidity)} onMouseOut={handleMouseOut}>
+          <SiSolidity />
+        </span>
+        <span className="bannerIcon">
+          <SiAdobephotoshop />
+        </span>
+        <span className="bannerIcon">
+          <SiAdobeillustrator />
+        </span>
+        <span className="bannerIcon">
+          <SiAdobeaftereffects />
+        </span>
       </div>
-    </motion.div>
+      {hoveredImage && windowWidth > 1024 &&(
+        <div className="popup" style={{ backdropFilter: 'blur(8px)' }}>
+          <img src={hoveredImage} alt="hovered" style={{ width: 500, height: 250}} />
+        </div>
+      )}
+    </div>
   );
 };
 
 export default Experience;
+
+
