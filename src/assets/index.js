@@ -19,6 +19,9 @@ import kotlin from "./images/kotlin.png";
 import solidity from "./images/solidity.png";
 import cpp from "./images/cpp.png";
 import rust from "./images/rust.png";
+import c1 from "./images/Certificate-1.png"
+import c2 from "./images/Certificate-2.jpg"
+import c3 from "./images/Certificate-3.png"
 
 
 export {
@@ -43,4 +46,7 @@ export {
   kotlin,
   solidity,
   rust,
+  c1,
+  c2,
+  c3,
 };
