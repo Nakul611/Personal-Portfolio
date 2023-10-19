@@ -60,7 +60,7 @@ const Education = () => {
           />
           <ResumeCard
             title="Front-end Developer"
-            subTitle="College Space (Sept-2022 to Sept-2011)"
+            subTitle="College Space (Sept-2022 to Dec-2022)"
             result="Kanpur"
             des="In my team project as a front-end dev, I honed my HTML, CSS, and JavaScript skills, focusing on collaborative coding and seamless UI/UX integration."
           />
