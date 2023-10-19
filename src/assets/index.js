@@ -22,6 +22,12 @@ import rust from "./images/rust.png";
 import c1 from "./images/Certificate-1.png"
 import c2 from "./images/Certificate-2.jpg"
 import c3 from "./images/Certificate-3.png"
+import project3 from "./images/projects/project3.jpg";
+import project2 from "./images/projects/project2.png";
+import project1 from "./images/projects/project1.png";
+import project6 from "./images/projects/project6.png";
+import project4 from "./images/projects/project4.jpg";
+import project5 from "./images/projects/project5.jpeg";
 
 
 export {
@@ -49,4 +55,10 @@ export {
   c1,
   c2,
   c3,
+  project3,
+  project2,
+  project1,
+  project6,
+  project4,
+  project5,
 };

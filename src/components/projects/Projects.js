@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import {project3, project2, project4, project1, project5, project6 } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -18,39 +18,34 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
           title="3D Portfolio"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectOne}
+          des="
+          You've learned to create 3D elements using Three.js, build reusable UI components and manage application state in React, and design responsive CSS layouts with Tailwind CSS."
+          src={project2}
         />
         <ProjectsCard
           title="TO-DO LIST"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectTwo}
+          des="Built a Kotlin-based To-Do List app with a focus on user-friendly design and efficient task management. Applied UI/UX principles for an intuitive and seamless experience."
+          src={project1}
         />
         <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
+          title="Scientific Calculator"
+          des="Developed a scientific calculator application in Kotlin, integrating advanced mathematical functions and ensuring precise calculations, applied UI/UX principles."
+          src={project3}
         />
         <ProjectsCard
           title="COLLEGE SPACE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
+          des="Developed a college project's front-end using HTML, CSS, and JavaScript, ensuring a seamless and engaging user experience with intuitive design and interactive elements."
+          src={project4}
         />
         <ProjectsCard
           title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectOne}
+          des="Built an e-commerce website utilizing React and Tailwind CSS, focusing on a dynamic and responsive user interface, essential features for seamless navigation and shopping experience."
+          src={project5}
         />
         <ProjectsCard
           title="Weather Report App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectTwo}
+          des="Developed a dynamic weather report website with real-time data integration, integrated API functionality for live weather updates, offering users an intuitive and interactive experience."
+          src={project6}
         />
       </div>
     </section>
