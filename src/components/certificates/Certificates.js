@@ -12,26 +12,20 @@ const Certificates = () => {
       <div className="flex justify-center items-center text-center">
         <Title
           title="Achievements"
-          des="My Certificates"
+          des="Certificates"
         />
       </div>
       <div className="grid grid-cols-1 mb-12 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <CertificatesCard
           title="Intern at Prodigy Infotech"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={c1}
         />
         <CertificatesCard
-          title="The Complete Android 12 & Kotlin Development Masterclass"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Android Development"
           src={c2}
         />
         <CertificatesCard
           title="Problem Solving (Intermidiate)"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={c3}
         />
       </div>

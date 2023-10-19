@@ -16,7 +16,7 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-full h-10" />
       </div>
       <div className="flex items-center gap-10">
-        <ul className={`absolute top-14 left-0 bg-bodyColor bg-opacity-95 w-full p-4 gap-8 ${isMenuOpen ? 'block' : 'hidden'} md:static md:flex md:items-center md:bg-transparent md:w-auto md:p-5 md:gap-15`}>
+        <ul className={`absolute top-12 left-0 bg-bodyColor bg-opacity-95 w-full p-4 gap-8 ${isMenuOpen ? 'block' : 'hidden'} md:static md:flex md:items-center md:bg-transparent md:w-auto md:p-5 md:gap-15`}>
           {navLinksdata.map(({ _id, title, link }) => (
             <li
               key={_id}

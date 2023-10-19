@@ -20,19 +20,20 @@ const Education = () => {
             title="B-Tech Computer Science"
             subTitle="Pranveer Singh Institute of Technology (2021 - Present)"
             result="6.3 CGPA"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+            des="I am currently studying algorithms, and engineering principles in my computer science engineering college."
           />
           <ResumeCard
             title="12th Board"
             subTitle="Kailash Vidyalok Inter College (2018 - 2020)"
             result="71.9%"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
+            des="In 12th standard, I studied advanced topics in Math, Science,and other elective subjects preparing for higher education and gained a better understanding."
           />
           <ResumeCard
             title="10th Board"
             subTitle="Shivaji Inter College (2016 - 2018)"
             result="70.5%"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+            des="In 10th standard, I studied subjects like Math, Science, and Languages,
+              along with basic life skills and problem-solving techniques."
           />
         </div>
       </div>
@@ -48,19 +49,20 @@ const Education = () => {
             title="Freelancer"
             subTitle="Open Scource (2023 - Present)"
             result="Global"
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
+            des="As a freelancer, I'm mastering client communication, project management, and diverse technical skills, continually learning new technologies for professional growth."
           />
           <ResumeCard
             title="Android Developer"
             subTitle="Intern at Prodigy Infotech (Sept-2023 to Sept-2023)"
             result="Mumbai"
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
+            des="
+            During my tenure as an Android developer, I specialized in Kotlin programming, agile methodologies, and the development of user-centric mobile applications."
           />
           <ResumeCard
             title="Front-end Developer"
             subTitle="College Space (Sept-2022 to Sept-2011)"
             result="Kanpur"
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
+            des="In my team project as a front-end dev, I honed my HTML, CSS, and JavaScript skills, focusing on collaborative coding and seamless UI/UX integration."
           />
         </div>
       </div>
