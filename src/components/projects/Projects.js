@@ -19,7 +19,7 @@ const Projects = () => {
         <ProjectsCard
           title="3D Portfolio"
           des="
-          You've learned to create 3D elements using Three.js, build reusable UI components and manage application state in React, and design responsive CSS layouts with Tailwind CSS."
+          Learned to create 3D elements using Three.js, build reusable UI components and manage application state in React, and design responsive CSS layouts with Tailwind CSS."
           src={project2}
         />
         <ProjectsCard
